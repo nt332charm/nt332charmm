@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/Abel-Regular.ttf" />
+    <link rel="stylesheet" href="font/Sarun's%20Manorah.ttf">
+    <link rel="stylesheet" href="font/OpenSansCondensed-Light.ttf">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/Roboto-Light.ttf">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+    
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+                                                                                            STYLE css
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
+        
+    
+<style>
+body {font-family: "Roboto, sans-serif"; background-color: black;}
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+    
+    
+    
+        @import url(font/Roboto-Light.ttf);
+        
+        
+        .font14{
+            font-family: "Roboto", sans-serif;
+            color: whitesmoke;
+            font-size: 16px;
+            
+        }
+
+    .font {
+        font-family: "Sarun's Manorah", serif;
+        color: #1c1711;
+        font-size: 25px;
+        text-shadow: 5px 4px 9px #7e6d37;
+        
+    }    
+    
+    .font2 {
+        font-family: 'OpenSansCondensed', sans-serif;
+        color: #f2f2f2;
+        font-size: 18px;
+        
+    }
+    
+    .font3 {
+        font-family: "Sarun's Manorah", serif;
+        color: #e68a00;
+        font-size: 50px;
+        
+        
+    }    
+    
+     .font4 {
+        font-family: "Sarun's Manorah", serif;
+        color: #FFF;
+        font-size: 50px;
+        
+        
+    } 
+    
+    
+    
+html {
+    scroll-behavior: smooth;}
+
+
+    .font18 {
+  letter-spacing: 2px;
+font-family: "Roboto", sans-serif;
+line-height: 1.8;
+}
+    
+    
+    
+    
+    
+    
+/*------------------------------------------------------------------
+    CONTACT AREA
+-------------------------------------------------------------------*/ 
+
+    
+   #grad1 {
+  background-color: #000; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#211b0d, #000000); /* Standard syntax (must be last) */
+} 
+    
+    #grad2 {
+        background-color: #312d24;
+    }
+    
+/*------------------------------------------------------------------
+    FOOTER AREA
+-------------------------------------------------------------------*/
+
+.footer-main{}
+.footer-news{
+	background:url(pictures/13.jpg) no-repeat center;
+    height: 300px;
+	background-attachment:fixed;
+	background-size:cover;
+	position:relative;
+}
+
+.footer-news::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ft-title.color-white {
+    color: #fff;
+}
+.ft-title {
+    letter-spacing: 0.96px;
+    margin-bottom: 22px;
+    font-family: "Sarun's Manorah", serif;
+    font-size: 50px;
+}
+
+.footer-news p {
+    margin-bottom: 40px;
+    font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+	text-align:center;
+}
+
+.footer-news form{
+	max-width:650px;
+	margin: 0 auto;
+	text-align:center;
+	width:100%;
+	position:relative;
+}
+
+.footer-news form input{
+	width:100%;
+	border:2px dotted #ccc;
+	background:#f5f5f5;
+	color:#202020;
+	padding:12px;
+	text-transform:capitalize;
+	border-radius: 4px;
+	opacity: 1;
+	min-height:53px;
+}
+.footer-news form a{
+	border:2px dotted #ccc;
+	padding: 0px 19px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+	border-radius: 4px;
+    min-width: inherit;
+    height: 53px;
+    line-height: 51px;
+    background:#e68a00;
+	color:whitesmoke;
+}
+
+.footer-news form a:hover{
+	background: Orangered;
+	color:whitesmoke;
+}
+
+.footer-box{
+	background:#202020;
+}
+
+.footer-in-main{
+	max-width:960px;
+	margin:0 auto;
+	width:100%;
+}
+
+.footer-logo{
+	padding-bottom:30px;
+}
+
+.footer-socials {
+    margin: 10px 0;
+    line-height: 30px;
+    padding: 4px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.socials-box {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 1px 0px;
+    padding: 4px;
+}
+.footer-box {
+	background-image:-moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(..images/footer_background.jpg);
+	background-image:-webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+	background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+	background-color:#111;background-position:center;background-repeat:no-repeat;background-size:cover
+	}
+.socials-box li {
+    display: inline-block;
+    opacity: 1;
+    margin-right: 7px;
+}
+.footer-box .social-circle-border{
+	background-color: transparent;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.social-circle-border {
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #6f6f6f;
+    text-align: center;
+}
+
+
+.footer-box-a h3{
+	font-size:24px;
+    color: #7b6a36;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-box-a p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+	line-height: 25px;
+}
+
+
+.footer-box-b h3{
+	font-size:24px;
+    color: #7b6a36;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-box-b p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+.footer-box-b ul li{
+	line-height:30px;
+}
+.footer-box-b ul li a{
+	color:#ffffff;
+}
+
+.footer-box-b ul li a:hover{
+	padding-left:5px;
+}	
+
+.footer-box-c h3{
+	font-size:24px;
+    color: #7b6a36;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-box-c p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+
+
+.footer-box-c p i{
+	font-size: 20px;
+    position: relative;
+    top: 4px;
+    float: left;
+    min-width: 20px;
+    text-align: center;
+}
+
+.footer-box-c p span{
+	display: table;
+    padding-left: 12px;
+	padding-top:1px;
+    padding-bottom: 5px
+}
+
+.footer-box-c p a{
+	color:#ffffff;
+}
+
+
+
+.footer-box-d h3{
+	font-size:24px;
+    color: #7b6a36;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-box-d p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+
+.footer-box-d ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.footer-box-d ul li{
+	display: inline-block;
+    width: 100%;
+	padding-bottom:12px;
+}
+.footer-box-d ul li p{
+	padding:0px;
+	margin:0px;
+}
+.footer-box-d ul li span{
+	color: #666;
+}
+
+/*------------------------------------------------------------------
+    COPYRIGHT AREA
+-------------------------------------------------------------------*/
+
+.copyright-main{
+	border-top: 2px dotted #fff;
+	text-align:center;
+	padding-top:25px;
+	margin-top:70px;
+	padding-bottom:25px;
+}
+
+.copyright-main .copy-title{
+	letter-spacing: 1px;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	padding-bottom:0px;
+}    
+    
+ .p1 {
+	font-size: 10px;
+	color: #656565;
+     text-align: left
+}
+    
+    
+   .p2 {
+	font-size: 10px;
+	color: #656565;
+     text-align: right
+} 
+ 
+    
+    
+    
+/*------------------------------------------------------------------
+    SCROLL UP BUTTON 2
+-------------------------------------------------------------------*/
+
+   
+.animate {
+  font-size: 40px;
+  opacity: 0.4;
+  animation: bounce 1s alternate infinite ease-in;
+}
+@keyframes bounce {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(20px);}
+}
+
+
+/* Right Demo ---*/
+#main-cont2 {
+  
+  position:fixed;
+  right:5%; bottom:20px;
+  width:50px;
+}
+#container2 {
+  width:100px; height:100px;
+  background:rgba(0,0,0,0);
+  border-radius:50%;
+  text-align:center;
+  line-height:100px;
+  font-size:40px;
+  color:#e9c6a6;
+  display:block;
+  overflow:hidden;
+  position:relative;
+}
+#back {
+  position:absolute; left:0; top:100%;
+  width:100%; height:100%;
+  background:#7e6d37;
+  z-index: -1;
+}
+    
+    
+/*------------------------------------------------------------------
+    Product AREA
+-------------------------------------------------------------------*/
+
+
+        
+/* side-bar*/
+        
+    
+    .body,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 87px;
+  bottom: 0;
+  height: inherit;
+}
+    
+    
+    .font6 {font-family: "Roboto", sans-serif;
+        color: #7e6d37;
+        font-size: 28px; 
+        
+    }
+    
+    .font5 {
+        font-family: "Roboto", sans-serif;
+        color: #7e6d37;
+        font-size: 14px;
+    
+    
+  
+  
+  
+    
+</style>
+      
+    </head>  
+    
+    
+    
+    
+    
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+                                                                                            MAIN BODY
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
+    
+    
+
+    
+
+    
+ 
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>    
+  
+    
+    
+    
+    
+<body>
+      
+<!-- Navbar -->  
+ <div class="w3-top w3-black w3-center">
+        <div class="w3-bar w3-black w3-card">
+
+            <a class=" w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html"
+                class=" font14 w3-bar-item w3-button w3-padding-large w3-hover-none w3-text-white w3-hover-text-yellow">HOME</a>
+            <a href="index.html#about"
+                class="font14 smoothScroll w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">ABOUT</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="font14 w3-padding-large w3-button w3-hover-none w3-text-white w3-hover-text-yellow" onclick="window.location.href='shop_first_page.html'" title="More">OUR MENUS <i class="fa fa-caret-down"></i></button>     
+                <div class="font14 w3-dropdown-content w3-bar-block w3-card-4 w3-hover-White w3-text-black ">
+                    <a href="shop_first_page.html" class="w3-bar-item w3-button">ABOUT CHARM MENUS</a>
+                    <a href="#" class="w3-bar-item w3-button">NEW YEAR SPECIAL MENUS</a>
+                    <a href="#" class="w3-bar-item w3-button">LUNCH MENUS</a>
+                    <a href="#" class="w3-bar-item w3-button">SET MENUS</a>
+                    <a href="#" class="w3-bar-item w3-button">STARTERS</a>
+                    <a href="#" class="w3-bar-item w3-button">VEGETERIAN STARTERS</a>
+                    <a href="#" class="w3-bar-item w3-button">SOUP</a>
+                    <a href="#" class="w3-bar-item w3-button">VEGETERIAN SOUPS</a>
+                    <a href="#" class="w3-bar-item w3-button">THAI SALAD</a>
+                    <a href="#" class="w3-bar-item w3-button">VEGETERIAN SALAD</a>
+                    <a href="shop.html" class="w3-bar-item w3-button">MAIN DISH - CURRIES</a>
+                    <a href="#" class="w3-bar-item w3-button">MAIN DISH - STIR FRY</a>
+                    <a href="#" class="w3-bar-item w3-button">MAIN DISH - SEAFOOD</a>
+                    <a href="#" class="w3-bar-item w3-button">MAIN DISH - GRILLED</a>
+                    <a href="#" class="w3-bar-item w3-button">MAIN DISH - STEAMED</a>
+                    <a href="#" class="w3-bar-item w3-button">MAIN DISH - VEGETERIAN</a>
+                    <a href="#" class="w3-bar-item w3-button">RICE AND NOODLE</a>
+                    <a href="#" class="w3-bar-item w3-button">DESSERTS</a>
+                    <a href="#" class="w3-bar-item w3-button">DRINKS</a>
+                </div>
+            </div>
+            <a href="index.html#reservation"
+                class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">RESERVE
+                NOW</a>
+            <img src="pictures/logo1.png" alt="logo" class="w3-bar-item w3-button w3-hover-none"
+                style="width:80px; height: 60px">
+            <a href="#"
+                class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">GALLERY</a>
+            <a href="index.html#contact"
+                class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">CONTACT</a>
+            <a href="#"
+                class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">LOGIN</a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-hide-small w3-right w3-text-yellow w3-hover-text-yellow"
+                style="font-size:22px" title="Shopping Cart"><i class="fa fa-shopping-cart"></i></a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-hide-small w3-right w3-text-yellow w3-hover-text-yellow"
+                style="font-size:22px" title="Search"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    
+    
+    <!--Product --> 
+    
+    
+    
+    
+    <!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>CHARM MENUS</b></h4>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="shop_first_page.html">ABOUT CHARM MENUS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">NEW YEAR SPECIAL MENUS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">LUNCH MENUS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">SET MENUS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">STARTERS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">VEGETERIAN STARTERS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">SOUP</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">VEGETERIAN SOUPS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">THAI SALAD</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">VEGETERIAN SALAD</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="shop.html">MAIN DISH - CURRIES</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">MAIN DISH - STIR FRY</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">MAIN DISH - SEAFOOD</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">MAIN DISH - GRILLED</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">MAIN DISH - STEAMED</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">MAIN DISH - VEGETERIAN</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">RICE AND NOODLE</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">DESSERTS</a>
+  <a class="font5 w3-bar-item w3-button w3-hover-black w3-hover-text-yellow" href="#">DRINKS</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="font6">CHARM MENUS</h1>  
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="font18 w3-twothird w3-container">
+
+<div>
+<p>
+   
+    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;OUR LUNCH CHOICES BEGIN AT ONLY £5.25, AND OUR MENU COVERS A WIDE RANGE OF OPTIONS AND SELECTIONS, 
+    INCLUDING A BROAD ARRAY OF SET MEALS.<br>
+
+    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;AN ECLECTIC RANGE OF TASTES AND ESSENCES ARE AVAILABLE WHEN DINING ON THAI CUISINE. YOUR DINING 
+    EXPERIENCE WILL BE A TRULY GASTRONOMIC EVENT DUE TO THE UNDERSTATED WAY IN WHICH FRESH INGREDIENTS 
+    ARE COMBINED WITH TRADITIONAL HERBS AND SPICES. THOSE WHO DINE WITH US AT CHARM THAI RESTAURANT GET 
+    NOTHING BUT THE BEST AND MOST AUTHENTIC THAI CUISINE MADE FRESH, OUR WAY, RIGHT IN OUR KITCHEN. THAT 
+    IS OUR PROMISE TO OUR CUSTOMERS.
+
+    
+    
+</div>
+       
+<picture>
+  <img src="pictures/14.jpg" style="width:auto;">
+</picture> 
+        
+        
+        
+        
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+   
+  </div>
+
+  <!-- Pagination -->
+  
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+
+       
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+    
+
+    
+    
+    
+    
+
+     <!-- CONTACT -->
+    
+    <div id="grad1"></div>
+    
+    
+    <div id="contact" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center"> NEWSLETTER </h2>
+                            <p> SIGN UP TO BE THE FIRST TO HEAR ABOUT THE EXCLUSIVE OFFERS. YOU CAN UNSUBSCRIBE AT ANY TIME.</p>
+                        </div>
+                        <form>
+                            <input type="email" placeholder="Enter your e-mail id">
+                            <a href="#" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-news -->
+        <div id="grad1" class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <br>
+                                <br>
+                               <img src="pictures/logo1.png" style="width:100px; height: 97px" alt="" />
+                            </div>
+                        </div>
+                        <div id="grad2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>ABOUT US</h3>
+                                <p> THE REAL THAI TASTE THAT WILL NOT NEVER MAKE YOU REGRET</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>NEW MENUS</h3>
+                                <ul>
+                                    <li><a href="#">KHAO SOI</a></li>
+                                    <li><a href="#">KHAO NUEA OP</a></li>
+                                    <li><a href="#">SPICY THAI NOODLES</a></li>
+                                    <li><a href="#">KHAO TOM</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div id="grad2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>CONTACT US</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>3.5.3H, BLAKE AVENUE, GILLINGHAM  ME7 1FL</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" style="font-size:26px" aria-hidden="true"></i>
+                                    <span>
+									+44 7398 x0x0 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@charmthai.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>OPENING HOURS</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>MONDAY - THURSDAY </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>FRIDAY - SATURDAY </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container"> 
+                    <h6 class="copy-title"> PRIVACY POLICY | TERMS AND CONDITIONS | SITEMAP | SUSTAINABLE | ALLERGY INFORMATION | MODERN SLAVERY STATEMENT </h6>
+                    <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-15 p1">
+                            <p>&copy; 2020 CHARM THAI RESTAURANT. ALL RIGHTS RESERVED</p>
+                            <p>VAT NO. 278900X3X, COMPANY REGISTRATION NO. 19901269 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    
+                            <i class="fas fa-globe" style='font-size:18px' aria-hidden="true"></i> &nbsp; DESIGNED BY NALINEE  
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+  
+    
+    
+    <!-- Scroll up --> 
+    
+
+    
+<div id='main-cont2'>
+  <a href='#' id='container2' class='container'>
+      <span id='back'></span>
+      <i class='fa fa-chevron-up'></i>
+  </a>
+</div>
+    
+    
+    
+   <script>
+    $(function() {
+  var $this = $('.container');
+  var d = $(document).height(),
+      c = $(window).height();
+  $(window).scroll(function() {
+  	var s = $(this).scrollTop();
+    var pos = (1-s/(d-c))*100;
+    
+    // left demo
+    $('.stop-color').attr('offset', pos+'%');
+    
+    // right demo
+    $('#back').css('top', pos+'%');
+  });
+  
+  $this.click(function() {
+    $('html,body').animate({scrollTop:0}, 100);
+		return false;
+	});  
+});
+    
+    </script> 
+    
+    
+    
+    
+</body>
+</html>

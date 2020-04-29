@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Charm HomePage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/Abel-Regular.ttf" />
+    <link rel="stylesheet" href="font/Sarun's%20Manorah.ttf">
+    <link rel="stylesheet" href="font/OpenSansCondensed-Light.ttf">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/Roboto-Light.ttf">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    
+    
+    
+    <style>
+        
+        
+        @import url(font/Roboto-Light.ttf);
+        
+        
+        .font14{
+            font-family: "Roboto", sans-serif;
+            color: whitesmoke;
+            font-size: 16px;
+            
+        }
+        
+        body {
+            font-family: "Roboto, sans-serif";
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .font {
+            font-family: "Sarun's Manorah", serif;
+            color: #1c1711;
+            font-size: 25px;
+            text-shadow: 5px 4px 9px #7e6d37;
+
+        }
+
+        .font2 {
+            font-family: 'Roboto', sans-serif;
+            color: #f2f2f2;
+            font-size: 18px;
+
+        }
+
+        .font3 {
+            font-family: "Sarun's Manorah", serif;
+            color: #e68a00;
+            font-size: 50px;
+
+
+        }
+
+        .font4 {
+            font-family: "Sarun's Manorah", serif;
+            color: #FFF;
+            font-size: 50px;
+
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            max-height:100%;
+            position: relative;
+            margin: auto;
+        }
+        #wowwow{
+            width:100%;
+            height:100%;
+        }
+
+        /* Caroulsel-fade */
+
+        .carousel-fade .carousel-inner .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .carousel-control {
+            z-index: 2;
+        }
+
+
+
+        .item:nth-child(1) {
+            background: #000;
+        }
+
+        .item:nth-child(2) {
+            background: #000;
+        }
+
+        .item:nth-child(3) {
+            background: #000;
+        }
+
+        /* Buttons on image 1 */
+
+
+        .container .btn {
+            font-family: "Roboto", sans-serif;
+            position: absolute;
+            top: 75%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #8B0000;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: red;
+            color: white;
+        }
+
+
+        .container .btn2 {
+            font-family: "Roboto", sans-serif;
+            position: absolute;
+            top: 75%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #FFFFFF;
+            color: DarkGoldenRod;
+            font-size: 16px;
+            padding: 12px 46px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn2:hover {
+            background-color: red;
+            color: white;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            font-family: "Roboto", sans-serif;
+            color: #f2f2f2;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 400px;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 10px;
+            text-shadow: 5px 4px 9px black;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #000;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #000;
+        }
+
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+
+
+
+
+
+
+        /*------------------------------------------------------------------
+                                ABOUT SECTION 
+        -------------------------------------------------------------------*/
+
+
+
+
+
+        /* Button on History section */
+
+        .container .btn3 {
+            position: static;
+            top: 75%;
+            left: 45%;
+            transform: translate(-0%, -0%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #e68a00;
+            color: whitesmoke;
+            font-size: 16px;
+            padding: 12px 46px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn3:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+
+        /* ABOUT*/
+
+        .hero-image {
+            background-image: url("pictures/2.jpg");
+            background-color: #000;
+            height: 800px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+
+
+        p.a {
+            font-family: "Abel-Regualr", sans-serif;
+            line-height: 3.0;
+            color: #7f6b36;
+            font-size: 14px;
+        }
+
+        .h1 {
+            font-family: "Sarun's Manorah, serif"
+        }
+        
+        
+         /* Animation */
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 15s cubic-bezier(.10,.98,.17,.97) forwards;
+}
+
+.header.fade-up {
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.text.fade-up {
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+    
+
+        /*------------------------------------------------------------------
+            RESERVATIONS AREA
+        -------------------------------------------------------------------*/
+
+
+        .section {
+            position: relative;
+            min-height: 100vh;
+            margin: auto;
+        }
+
+        .section.bg-static {
+            background-color: #85c1e9;
+            background-image: url("pictures/11.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section .bg-move {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: auto;
+            width: 100%;
+            background-image: url("pictures/12.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-reservations-box {
+            width: 600%;
+        }
+
+
+        .reservations-main {}
+
+        .form-reservations-box {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .reservations-main h4 {
+            text-align: center;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            padding-top: 25px;
+        }
+
+        .reservations-main p {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        .reservations-box {
+            padding-top: 30px;
+        }
+
+        .form-box {
+            margin-bottom: 20px;
+            min-height: 53px;
+        }
+
+        .form-box input {
+            width: 100%;
+            border: 2px dotted #b6b3a6;
+            background: #f5f5f5;
+            color: #202020;
+            padding: 12px;
+            text-transform: capitalize;
+            border-radius: 4px;
+            opacity: 1;
+            min-height: 54px;
+        }
+
+        .form-box select {
+            width: 100%;
+            border: 2px dotted #b6b3a6;
+            background: #f5f5f5;
+            color: #202020;
+            padding: 12px;
+            text-transform: capitalize;
+            border-radius: 4px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+
+        .form-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            width: 100%;
+        }
+
+        .form-box .bootstrap-select button {
+            width: 100%;
+            border: 2px dotted #ccc;
+            background: #f5f5f5;
+            color: #202020 !important;
+            padding: 15px;
+            text-transform: capitalize;
+            border-radius: 4px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+
+
+
+
+        .form-box select option {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 5px;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome */
+            color: #202020;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #202020;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #202020;
+            opacity: 1;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 4 - 18 */
+            color: #202020;
+            opacity: 1;
+        }
+
+        .reserve-book-btn {
+            padding-top: 30px;
+        }
+
+        .reserve-book-btn button a {
+            background-color: #e68a00;
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .reserve-book-btn button:hover {
+            background: orangered;
+            color: white;
+        }
+
+        .reserve-book-btn button {
+            color: whitesmoke;
+            background-color: #e68a00;
+            border-radius: 5px;
+            min-width: 219px;
+            padding: 10.5px 20px;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .reserve-book-btn button:hover a {
+            background: none;
+            border: none;
+        }
+
+        textarea:focus,
+        input:focus,
+        select:focus,
+        .bootstrap-select .dropdown-toggle:focus {
+            outline: none !important;
+        }
+
+
+
+
+
+
+
+        /*------------------------------------------------------------------
+            CONTACT AREA
+        -------------------------------------------------------------------*/
+
+
+        #grad1 {
+            background-color: #000;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(#211b0d, #000000);
+            /* Standard syntax (must be last) */
+        }
+
+        #grad2 {
+            background-color: #312d24;
+        }
+
+        /*------------------------------------------------------------------
+            FOOTER AREA
+        -------------------------------------------------------------------*/
+
+        .footer-main {}
+
+        .footer-news {
+            background: url(pictures/13.jpg) no-repeat center;
+            height: 300px;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer-news::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.50);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ft-title.color-white {
+            color: #fff;
+        }
+
+        .ft-title {
+            letter-spacing: 0.96px;
+            margin-bottom: 22px;
+            font-family: "Sarun's Manorah", serif;
+            font-size: 50px;
+        }
+
+        .footer-news p {
+            margin-bottom: 40px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .footer-news form {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .footer-news form input {
+            width: 100%;
+            border: 2px dotted #ccc;
+            background: #f5f5f5;
+            color: #202020;
+            padding: 12px;
+            text-transform: capitalize;
+            border-radius: 4px;
+            opacity: 1;
+            min-height: 53px;
+        }
+
+        .footer-news form a {
+            border: 2px dotted #ccc;
+            padding: 0px 19px;
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 4px;
+            min-width: inherit;
+            height: 53px;
+            line-height: 51px;
+            background: #e68a00;
+            color: whitesmoke;
+        }
+
+        .footer-news form a:hover {
+            background: Orangered;
+            color: whitesmoke;
+        }
+
+        .footer-box {
+            background: #202020;
+        }
+
+        .footer-in-main {
+            max-width: 960px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .footer-logo {
+            padding-bottom: 30px;
+        }
+
+        .footer-socials {
+            margin: 10px 0;
+            line-height: 30px;
+            padding: 4px;
+            text-align: center;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .socials-box {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 1px 0px;
+            padding: 4px;
+        }
+
+        .footer-box {
+            background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(..images/footer_background.jpg);
+            background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+            background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+            background-color: #111;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .socials-box li {
+            display: inline-block;
+            opacity: 1;
+            margin-right: 7px;
+        }
+
+        .footer-box .social-circle-border {
+            background-color: transparent;
+            color: #fff;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .social-circle-border {
+            font-size: 20px;
+            line-height: 23px;
+            margin-right: 2px;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #6f6f6f;
+            text-align: center;
+        }
+
+
+        .footer-box-a h3 {
+            font-size: 24px;
+            color: #7b6a36;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-box-a p {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            line-height: 25px;
+        }
+
+
+        .footer-box-b h3 {
+            font-size: 24px;
+            color: #7b6a36;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-box-b p {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        .footer-box-b ul li {
+            line-height: 30px;
+        }
+
+        .footer-box-b ul li a {
+            color: #ffffff;
+        }
+
+        .footer-box-b ul li a:hover {
+            padding-left: 5px;
+        }
+
+        .footer-box-c h3 {
+            font-size: 24px;
+            color: #7b6a36;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-box-c p {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+
+        .footer-box-c p i {
+            font-size: 20px;
+            position: relative;
+            top: 4px;
+            float: left;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .footer-box-c p span {
+            display: table;
+            padding-left: 12px;
+            padding-top: 1px;
+            padding-bottom: 5px
+        }
+
+        .footer-box-c p a {
+            color: #ffffff;
+        }
+
+
+
+        .footer-box-d h3 {
+            font-size: 24px;
+            color: #7b6a36;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-box-d p {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        .footer-box-d ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .footer-box-d ul li {
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 12px;
+        }
+
+        .footer-box-d ul li p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .footer-box-d ul li span {
+            color: #666;
+        }
+
+        /*------------------------------------------------------------------
+            COPYRIGHT AREA
+        -------------------------------------------------------------------*/
+
+        .copyright-main {
+            border-top: 2px dotted #fff;
+            text-align: center;
+            padding-top: 25px;
+            margin-top: 70px;
+            padding-bottom: 25px;
+        }
+
+        .copyright-main .copy-title {
+            letter-spacing: 1px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            padding-bottom: 0px;
+        }
+
+        .p1 {
+            font-size: 10px;
+            color: #656565;
+            text-align: left
+        }
+
+
+        .p2 {
+            font-size: 10px;
+            color: #656565;
+            text-align: right
+        }
+
+
+
+
+        /*------------------------------------------------------------------
+            SCROLL UP BUTTON 2
+        -------------------------------------------------------------------*/
+
+
+        .animate {
+            font-size: 40px;
+            opacity: 0.4;
+            animation: bounce 1s alternate infinite ease-in;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(20px);
+            }
+        }
+
+
+        /* Right Demo ---*/
+        #main-cont2 {
+
+            position: fixed;
+            right: 5%;
+            bottom: 20px;
+            width: 50px;
+        }
+
+        #container2 {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            color: #e9c6a6;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #back {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 100%;
+            background: #7e6d37;
+            z-index: -1;
+        }
+    </style>
+
+    <style>
+         .container2 {
+            border-spacing: 15px;
+             width: 1300px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+             background-image: linear-gradient(#211b0d, #000000);
+        }
+        .multi-item-carousel .carousel-inner > .item,
+        .multi-item-carousel2 .carousel-inner > .item {
+          -webkit-transition: 500ms ease-in-out left;
+          transition: 500ms ease-in-out left;
+        }
+        .multi-item-carousel .carousel-inner .active.left,
+        .multi-item-carousel2 .carousel-inner .active.left {
+          left: -33%;
+        }
+        .multi-item-carousel .carousel-inner .active.right,
+        .multi-item-carousel2 .carousel-inner .active.right {
+          left: 33%;
+        }
+        .multi-item-carousel .carousel-inner .next,
+        .multi-item-carousel2 .carousel-inner .next {
+          left: 33%;
+        }
+        .multi-item-carousel .carousel-inner .prev,
+        .multi-item-carousel2 .carousel-inner .prev {
+          left: -33%;
+        }
+        @media all and (transform-3d), (-webkit-transform-3d) {
+          .multi-item-carousel .carousel-inner > .item,
+          .multi-item-carousel2 .carousel-inner > .item  {
+            -webkit-transition: 500ms ease-in-out all;
+            transition: 500ms ease-in-out all;
+            -webkit-backface-visibility: visible;
+                    backface-visibility: visible;
+            -webkit-transform: none!important;
+                    transform: none!important;
+          }
+        }
+        .multi-item-carousel .carouse-control.left,
+        .multi-item-carousel .carouse-control.right,
+        .multi-item-carousel2 .carouse-control.left,
+        .multi-item-carousel2 .carouse-control.right {
+          background-image: none;
+        }
+       
+        
+        </style>
+
+
+
+
+</head>
+
+
+<body>
+    <!-- Navbar -->  
+    <div class="w3-top w3-black w3-center">
+        <div class="w3-bar w3-black w3-card">
+    
+        <a class="  w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class=" font14 w3-bar-item w3-button w3-padding-large w3-hover-none w3-text-white w3-hover-text-yellow">HOME</a>
+        <a href="#about" class="font14 smoothScroll w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">ABOUT</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+            <button class="font14 w3-padding-large w3-button w3-hover-none w3-text-white w3-hover-text-yellow" onclick="window.location.href='shop_first_page.html'" title="More">OUR MENUS <i class="fa fa-caret-down"></i></button>    
+            <div href="#1" class="font14 w3-dropdown-content w3-bar-block w3-card-4 w3-hover-White w3-text-black ">
+            <a href="shop_first_page.html" class="w3-bar-item w3-button">ABOUT CHARM MENUS</a>
+            <a href="#1" class="w3-bar-item w3-button">NEW YEAR SPECIAL MENUS</a>
+            <a href="#1" class="w3-bar-item w3-button">LUNCH MENUS</a>
+            <a href="#1" class="w3-bar-item w3-button">SET MENUS</a>
+            <a href="#1" class="w3-bar-item w3-button">STARTERS</a>
+            <a href="#1" class="w3-bar-item w3-button">VEGETERIAN STARTERS</a>
+            <a href="#1" class="w3-bar-item w3-button">SOUP</a>
+            <a href="#1" class="w3-bar-item w3-button">VEGETERIAN SOUPS</a>
+            <a href="#1" class="w3-bar-item w3-button">THAI SALAD</a>  
+            <a href="#1" class="w3-bar-item w3-button">VEGETERIAN SALAD</a>
+            <a href="shop.html" class="w3-bar-item w3-button">MAIN DISH - CURRIES</a>  
+            <a href="#1" class="w3-bar-item w3-button">MAIN DISH - STIR FRY</a>
+            <a href="#1" class="w3-bar-item w3-button">MAIN DISH - SEAFOOD</a>  
+            <a href="#1" class="w3-bar-item w3-button">MAIN DISH - GRILLED</a>
+            <a href="#1" class="w3-bar-item w3-button">MAIN DISH - STEAMED</a>  
+            <a href="#1" class="w3-bar-item w3-button">MAIN DISH - VEGETERIAN</a> 
+            <a href="#1" class="w3-bar-item w3-button">RICE AND NOODLE</a>  
+            <a href="#1" class="w3-bar-item w3-button">DESSERTS</a>
+            <a href="#1" class="w3-bar-item w3-button">DRINKS</a>  
+            </div>
+        </div>
+            <a href="#reservation" class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">RESERVE NOW</a>
+            <img src="pictures/logo1.png" alt="logo" class="w3-bar-item w3-button w3-hover-none" style="width:80px; height: 60px">
+            <a href="#1" class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">GALLERY</a>
+            <a href="#contact" class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">CONTACT</a>
+            <a href="#1" class="font14 w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-none w3-text-white w3-hover-text-yellow">LOGIN</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-hide-small w3-right w3-text-yellow w3-hover-text-yellow" style="font-size:22px" title="Shopping Cart"><i class="fa fa-shopping-cart"></i></a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-hide-small w3-right w3-text-yellow w3-hover-text-yellow" style="font-size:22px" title="Search"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+  
+    <!-- Slideshow --> 
+    <section id="Firsthome" data-stellar-background-ratio="0.5">
+
+        <div class="slideshow-container">
+            <div id="myCarousel1" class="w3-black carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    <li data-target="#myCarousel1" data-slide-to="2"></li>
+                </ol>
+    
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner ">
+                    <div class="item active">
+                        <img src="pictures/1.jpg" id="wowwow">
+                        <div class="container">
+                            <button class="btn">MAKE A RESERVATION </button>
+                            <button class="btn2">ORDER ONLINE</button>
+                        </div>
+                    </div>
+    
+                    <div class="item ">
+                        <img src="pictures/3.jpg" id="wowwow">
+                        <div class="text">ENJOY WITH YOUR FAMILY</div>
+                    </div>
+    
+                    <div class="item ">
+                        <img src="pictures/tom-ka-gai.jpg" id="wowwow">
+                    </div>
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel1"  data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel1"  data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Gallery --> 
+
+    <div class="container2">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide multi-item-carousel" id="theCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-4"><img src="pictures/5.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4"><img src="pictures/6.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4"><img src="pictures/7.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4"><img src="pictures/8.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4"><img src="pictures/9.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4"><img src="pictures/10.jpg"
+                                        class="img-responsive"></div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                            class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                            class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+ <!-- ABOUT -->
+    
+    
+ <section id="about" data-stellar-background-ratio="0.5">
+     <div class="hero-image">
+         <div class="hero-text">
+             <br>
+             <br>
+             <br>
+             <br>
+             <h1 class="w3-text-black font fade-up" style="font-size: 40px">ENJOY CLASSIC AUTHENTIC THAI FOOD</h1>
+             <p class="a font2 fade-up"> EVERY INGREDIENT HAS BEEN CAREFUL SELECTED FROM THE FINEST AND OF<br>
+                 PREMIUM QUALITY. METICULIOUSLY PREPARED AND SERVED BY CHEF NALINEE,<br>
+                 WHO IS SPIRITUALLY DEDICATED TO GIVING THE BEST TO OUR CUSTOMERS.
+             </p>
+             <div class="container">
+                 <button class="btn3" style="font-family: sans-serif">OUR MENUS</button>
+             </div>
+         </div>
+     </div>
+ </section>
+
+      <!-- RESERVATION -->
+    
+      
+    <div id="reservation" class="section bg-static">
+        <div class="bg-move"></div>
+        <div class="container w3-display-middle">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center font3">
+                                RESERVATION
+                            </h2>
+                        </div>
+                        <h4 class="form-title text-center" style="font-family: sans-serif" >BOOKING FORM</h4>
+                        <p class="text-center"  style="font-family: sans-serif">PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS!</p>
+
+                        <form method="post" class="reservations-box"  style="font-family: sans-serif" name="contactform" action="mail.php">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="form_name" id="form_name" placeholder="NAME"
+                                        required="required" data-error="Firstname is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="email" name="email" id="email" placeholder="E-MAIL ID" required="required"
+                                        data-error="E-mail id is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="phone" id="phone" placeholder="CONTACT NO.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="time-picker" id="time-picker" placeholder="TIME"
+                                        required="required" data-error="Time is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="no_of_persons" id="no_of_persons" class="selectpicker">
+                                        <option selected disabled>NO. OF PERSONS</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>More than 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="date-picker" id="date-picker" placeholder="DATE"
+                                        required="required" data-error="Date is required." />
+                                </div>
+                            </div>
+
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="preferred_food" id="preferred_food" class="selectpicker">
+                                        <option selected disabled>PREFERRED FOOD</option>
+                                        <option>THAI</option>
+                                        <option>VEGETERIAN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="occasion" id="occasion" class="selectpicker">
+                                        <option selected disabled>OCCASION</option>
+                                        <option>WEDDING</option>
+                                        <option>BIRTHDAY</option>
+                                        <option>ANNIVERSARY</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="reserve-book-btn text-center">
+                                    <button class="hvr-underline-from-center" type="submit" value="SEND" id="submit">BOOK MY
+                                        TABLE </button>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </form>
+                        <!-- end form -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end reservations-box -->
+            </div>
+            <!-- end row -->
+        </div>
+    </div>
+
+     <!-- CONTACT -->
+
+     <div id="grad1"></div>
+
+
+     <div id="contact" class="footer-main">
+         <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                             <h2 class="ft-title color-white text-center"> NEWSLETTER </h2>
+                             <p> SIGN UP TO BE THE FIRST TO HEAR ABOUT THE EXCLUSIVE OFFERS. YOU CAN UNSUBSCRIBE AT ANY
+                                 TIME.</p>
+                         </div>
+                         <form>
+                             <input type="email" style="font-family: sans-serif" placeholder="ENTER YOUR E-MAIL ID">
+                             <a href="#1" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                         </form>
+                     </div>
+                     <!-- end col -->
+                 </div>
+                 <!-- end row -->
+             </div>
+             <!-- end container -->
+         </div>
+         <!-- end footer-news -->
+         <div id="grad1" class="footer-box pad-top-70">
+             <div class="container">
+                 <div class="row">
+                     <div class="footer-in-main">
+                         <div class="footer-logo">
+                             <div class="text-center">
+                                 <br>
+                                 <br>
+                                 <img src="pictures/logo1.png" style="width:100px; height: 97px" alt="" />
+                             </div>
+                         </div>
+                         <div id="grad2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                             <div class="footer-box-a">
+                                 <h3>ABOUT US</h3>
+                                 <p> THE REAL THAI TASTE THAT WILL NOT NEVER MAKE YOU REGRET</p>
+                                 <ul class="socials-box footer-socials pull-left">
+                                     <li>
+                                         <a href="#1">
+                                             <div class="social-circle-border"><i class="fa fa-facebook"></i></div>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#1">
+                                             <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#1">
+                                             <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#1">
+                                             <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#1">
+                                             <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                         </a>
+                                     </li>
+                                 </ul>
+
+                             </div>
+                             <!-- end footer-box-a -->
+                         </div>
+                         <!-- end col -->
+                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                             <div class="footer-box-b" style="font-family: sans-serif">
+                                 <h3>NEW MENUS</h3>
+                                 <ul>
+                                     <li><a href="#1">KHAO SOI</a></li>
+                                     <li><a href="#1">KHAO NUEA OP</a></li>
+                                     <li><a href="#1">SPICY THAI NOODLES</a></li>
+                                     <li><a href="#1">KHAO TOM</a></li>
+                                 </ul>
+                             </div>
+                             <!-- end footer-box-b -->
+                         </div>
+                         <!-- end col -->
+                         <div id="grad2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                             <div class="footer-box-c">
+                                 <h3>CONTACT US</h3>
+                                 <p>
+                                     <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                     <span>3.5.3H, BLAKE AVENUE, GILLINGHAM ME7 1FL</span>
+                                 </p>
+                                 <p>
+                                     <i class="fa fa-mobile" style="font-size:26px" aria-hidden="true"></i>
+                                     <span>
+                                         +44 7398 x0x0
+                                     </span>
+                                 </p>
+                                 <p>
+                                     <i class="fa fa-envelope" aria-hidden="true"></i>
+                                     <span><a href="#1">support@charmthai.com</a></span>
+                                 </p>
+                             </div>
+                             <!-- end footer-box-c -->
+                         </div>
+                         <!-- end col -->
+                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                             <div class="footer-box-d">
+                                 <h3>OPENING HOURS</h3>
+
+                                 <ul>
+                                     <li>
+                                         <p>MONDAY - THURSDAY </p>
+                                         <span style="font-family: sans-serif"> 11:00 AM - 9:00 PM</span>
+                                     </li>
+                                     <li>
+                                         <p>FRIDAY - SATURDAY </p>
+                                         <span style="font-family: sans-serif"> 11:00 AM - 5:00 PM</span>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <!-- end footer-box-d -->
+                         </div>
+                         <!-- end col -->
+                     </div>
+                     <!-- end footer-in-main -->
+                 </div>
+                 <!-- end row -->
+             </div>
+             <!-- end container -->
+             <div id="copyright" class="copyright-main">
+                 <div class="container">
+                     <h6 class="copy-title"> PRIVACY POLICY | TERMS AND CONDITIONS | SITEMAP | SUSTAINABLE | ALLERGY
+                         INFORMATION | MODERN SLAVERY STATEMENT </h6>
+                     <br>
+                     <div class="container">
+                         <div class="row">
+                             <div class="col-md-15 p1" style="font-family: sans-serif">
+                                 <p>&copy; 2020 CHARM THAI RESTAURANT. ALL RIGHTS RESERVED</p>
+                                 <p>VAT NO. 278900X3X, COMPANY REGISTRATION NO. 19901269 &nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                                     <i class="fas fa-globe" style='font-size:18px' aria-hidden="true"></i> &nbsp;
+                                     DESIGNED BY NALINEE
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- end row -->
+                 </div>
+                 <!-- end container -->
+             </div>
+             <!-- end copyright-main -->
+         </div>
+         <!-- end footer-box -->
+     </div>
+
+    <!-- Scroll up --> 
+    
+   <div id='main-cont2'>
+  <a href='#Firsthome' id='container2' class='container'>
+      <span id='back'></span>
+      <i class='fa fa-chevron-up'></i>
+  </a>
+</div>
+    
+    
+    
+   <script>
+    $(function() {
+  var $this = $('.container');
+  var d = $(document).height(),
+      c = $(window).height();
+  $(window).scroll(function() {
+  	var s = $(this).scrollTop();
+    var pos = (1-s/(d-c))*100;
+    
+    // left demo
+    $('.stop-color').attr('offset', pos+'%');
+    
+    // right demo
+    $('#back').css('top', pos+'%');
+  });
+  
+  /* $this.click(function() {
+    $('html,body').animate({scrollTop:0}, 100);
+		return false; 
+	});  */
+});
+    
+    </script> 
+
+<script >
+
+    $(window).on("load resize scroll", function() {
+    $(".bg-static").each(function() {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+        $(this)
+            .find(".bg-move")
+            .css({ left: leftPosition });
+    });
+    });
+
+    // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+      interval: false });
+    
+    
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    
+      if (next.next().length > 0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+    
+    $('.multi-item-carousel2').carousel({
+      interval: false });
+    
+      $('.multi-item-carousel2 .item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    
+      if (next.next().length > 0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+    //# sourceURL=pen.js
+        </script>
+
+
+
+
+</body>
+
+</html>
